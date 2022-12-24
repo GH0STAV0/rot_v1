@@ -27,7 +27,7 @@ def visit_tor(driver):
 if __name__ == "__main__":
 	try:
 		print("gj")
-		display = Display(visible=1, size=(dri_mod.width,dri_mod.height)).start()
+		display = Display(visible=0, size=(dri_mod.width,dri_mod.height)).start()
 		driver=dri_mod.build_driver()
 		visit_tor(driver)
 		display.stop()
